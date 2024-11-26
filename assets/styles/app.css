@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.header {
+    position: relative;
+    height: 100vh; /* Hauteur du header égale à la hauteur de la fenêtre */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../public/images/fond-portfolio.jpg');
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone */
+    background-position: center; /* Centre l'image */
+    filter: brightness(0.3); /* Ajuste la luminosité de l'image de fond */
+}
+
+.header-content {
+    position: relative;
+    z-index: 1; /* Assure que le contenu est au-dessus de l'overlay */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-content h1 {
+    font-size: 1.5rem; /* Taille de la police du titre */
+    font-weight: bold; /* Gras pour le titre */
+    color: white; /* Couleur du texte */
+}
+
+.header-content nav ul li {
+    list-style-type: none; /* Supprime les puces des listes */
+}
+
+.bg-black {
+    background-color: rgba(0, 0, 0, 0.7); /* Couleur noir avec opacité de 70% */
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

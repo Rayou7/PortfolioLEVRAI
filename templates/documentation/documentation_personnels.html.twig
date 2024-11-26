@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Documentation - Portfolio{% endblock %}
+
+{% block body %}
+    <section class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+            <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Documentation</h1>
+
+
+            <div class="flex py-4 mt-4 overflow-x-auto overflow-y-hidden md:justify-center dark:border-gray-700">
+    <button
+        id="btn-scolaire"
+        class="h-12 px-8 py-2 -mb-px text-sm text-center text-gray-700 bg-transparent border-b-2 border-gray-200 sm:text-base dark:text-white whitespace-nowrap cursor-base focus:outline-none dark:border-gray-700 dark:hover:border-gray-400 hover:border-gray-400">
+        Scolaire
+    </button>
+
+    <button
+        id="btn-professionnels"
+        class="h-12 px-8 py-2 -mb-px text-sm text-center text-gray-700 bg-transparent border-b-2 border-gray-200 sm:text-base dark:text-white whitespace-nowrap cursor-base focus:outline-none dark:border-gray-700 dark:hover:border-gray-400 hover:border-gray-400">
+        Professionnels
+    </button>
+
+    <button
+        id="btn-personnels"
+        class="h-12 px-8 py-2 -mb-px text-sm text-center text-blue-600 bg-transparent border-b-2 border-blue-500 sm:text-base dark:border-blue-400 dark:text-blue-300 whitespace-nowrap focus:outline-none">
+        Tableau de synthèse
+    </button>
+</div>
+            <section class="mt-8 space-y-8 lg:mt-12">
+                <div class="flex flex-wrap -mx-4">
+            
+                </div>
+            </section>
+
+            <section class="mt-8 space-y-8 lg:mt-12">
+                <div class="flex flex-wrap -mx-4">
+
+    
+                    
+                </div>
+            </section>
+
+            <section class="mt-8 space-y-8 lg:mt-12 pb-10">
+                <div class="flex flex-wrap -mx-4">
+                    
+                    <div class="w-full md:w-1/3 px-4 mb-8">
+                        <div class="relative">
+                            <img class="object-cover w-full h-64 rounded-lg md:h-96 transition-all duration-300 filter brightness-100 contrast-100"
+                                 src="{{ asset('../../images/NMAP.jpg') }}"
+                                 alt="">
+                            <div class="absolute inset-0 flex items-center justify-center flex-col text-white opacity-0 hover:opacity-100 transition-opacity bg-black">
+                                <div>
+                                    NMAP
+                                </div>
+                                <a href="{{ asset('../../pdf/NMAP.pdf') }}" class="download-link" target="_blank">Téléchargez le PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+    {% block javascripts %}
+    <script>
+        document.getElementById('btn-scolaire').addEventListener('click', function() {
+            window.location.href = '/documentation/scolaire';
+        });
+
+        document.getElementById('btn-professionnels').addEventListener('click', function() {
+            window.location.href = '/documentation/professionnels';
+        });
+
+        document.getElementById('btn-personnels').addEventListener('click', function() {
+            window.location.href = '/documentation/tableau_de_synthese';
+        });
+    </script>
+{% endblock %}
+{% endblock %}

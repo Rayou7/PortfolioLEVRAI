@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}BTS SIO - Portfolio{% endblock %}
+
+{% block body %}
+    <section class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto text-center">
+            <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Présentation du BTS SIO</h1>
+
+            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12">
+                <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl mb-8"> <!-- Ajout de mb-8 ici -->
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">LE BTS SIO</h1>
+                    <p class="text-gray-500 dark:text-gray-300">
+                        Le BTS SIO (Brevet de Technicien Supérieur en Services Informatiques aux Organisations) est un diplôme français de niveau bac+2 qui forme les étudiants aux métiers de l'informatique, spécifiquement dans le domaine du support et des services aux organisations. Le programme vise à doter les étudiants de compétences techniques et professionnelles pour répondre aux besoins informatiques des entreprises et des organisations. Le BTS SIO se décline en deux spécialités :
+                    </p>
+                </div>
+
+                <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl mb-8">
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">L'option SLAM</h1>
+                    <p class="text-gray-500 dark:text-gray-300">
+                        L'option SLAM forme les étudiants à la conception et au développement de solutions informatiques sous forme d'applications variées, qu'elles soient web, mobiles ou de bureau. Cette spécialité couvre principalement :
+                        - La programmation dans différents langages (Java, PHP, C#, etc.).
+                        - La gestion de bases de données.
+                        - Le développement d'interfaces utilisateur.
+                        - L'analyse et la spécification des besoins clients.
+                        - La réalisation de tests et la maintenance de logiciels. Les diplômés de cette option peuvent prétendre à des postes tels que développeur d'applications, analyste-programmeur, concepteur de logiciels, ou encore gestionnaire de bases de données.
+                    </p>
+                </div>
+
+                <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl mb-8">
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">L'option SISR</h1>
+                    <p class="text-gray-500 dark:text-gray-300">
+                        L'option SISR prépare les étudiants à installer, configurer et gérer les infrastructures réseau et les systèmes informatiques d'une organisation. Cette spécialité englobe :
+                        - La mise en place et la maintenance de réseaux informatiques.
+                        - La gestion des serveurs (Windows Server, Linux, etc.).
+                        - La mise en œuvre de mesures de sécurité.
+                        - La virtualisation des systèmes.
+                        - La surveillance et l'optimisation des performances du système d'information.
+                        Les diplômés peuvent occuper des fonctions telles que administrateur système et réseau, technicien en support informatique, responsable de la sécurité des systèmes d'information, ou encore consultant en systèmes et réseaux.
+                    </p>
+                </div>
+
+                <div class="p-8 space-y-3 border-2 border-blue-400 dark:border-blue-300 rounded-xl mb-8">
+                    <h1 class="text-xl font-semibold text-gray-700 capitalize dark:text-white">CYBERSECURITE</h1>
+                    <p class="text-gray-500 dark:text-gray-300">
+                        La cybersécurité est essentielle dans le BTS SIO, couvrant la protection des systèmes, réseaux et données contre les cyberattaques. Elle inclut technologies, processus et pratiques pour sécuriser appareils, logiciels et échanges. Modules sur politiques de sécurité, sensibilisation aux menaces, protection des données et solutions adaptées. Domaine en évolution avec demande croissante pour professionnels formés, indispensables dans tous secteurs d'activité.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
